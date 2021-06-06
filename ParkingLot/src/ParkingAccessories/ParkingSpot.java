@@ -1,14 +1,16 @@
 package ParkingAccessories;
 
+import types.ParkingSlotType;
+
 public abstract class ParkingSpot {
 	 private String number;
 	  private boolean free;
 	  private Vehicle vehicle;
-	  private final ParkingSpotType type;
+	  private final ParkingSlotType type;
 
 	  public boolean IsFree();
 
-	  public ParkingSpot(ParkingSpotType type) {
+	  public ParkingSpot(ParkingSlotType type) {
 	    this.type = type;
 	  }
 
